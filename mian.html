@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Travel Website</title>
     <link href="style.css" rel="stylesheet"/>
+    <script src="script.js" defer></script>
 </head>
 <body id="travel-home">
     <header>
@@ -20,9 +21,21 @@
         <p>Discover your next adventure with us...</p>
         <!-- Featured Images -->
         <div class="featured-images">
-            <img src="path/to/your/image1.jpg" alt="Destination 1">
-            <img src="path/to/your/image2.jpg" alt="Destination 2">
-            <img src="path/to/your/image3.jpg" alt="Destination 3">
+            <div>
+                <img src="images (1) - Copy.jpg" alt="Destination 1">
+                <span class="more-images" data-target="more-images-1">Explore More</span>
+                <div class="additional-images" id="more-images-1"></div>
+            </div>
+            <div>
+                <img src="images (2) - Copy.jpg" alt="Destination 2">
+                <span class="more-images" data-target="more-images-2">Explore More</span>
+                <div class="additional-images" id="more-images-2"></div>
+            </div>
+            <div>
+                <img src="images (3).jpg" alt="Destination 3">
+                <span class="more-images" data-target="more-images-3">Explore More</span>
+                <div class="additional-images" id="more-images-3"></div>
+            </div>
         </div>
     </section>
     <footer>
