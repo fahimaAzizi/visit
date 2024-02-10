@@ -1,58 +1,195 @@
+/* Style for the header, body, and footer for general aesthetics */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
     text-align: center;
-    padding: 1em;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #969393;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Styles specific for the .featured-images and its children */
+.featured-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between boxes as needed */
+    padding: 20px;
+}
+
+.featured-images div {
+    border: 1px solid #ddd; /* Adds a border around each box */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: Adds a slight shadow for depth */
+    border-radius: 5px; /* Optional: Rounds the corners of the border */
+    overflow: hidden; /* Ensures nothing spills outside the border */
+    flex-basis: calc(33% - 20px); /* Adjusts the base size minus the gap for three items per row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.featured-images img {
+    width: 100%; /* Makes the image fill the width of its container */
+    height: auto; /* Keeps the aspect ratio of the image */
+}
+
+.featured-images span {
+    padding: 15px;
+    display: block; /* Ensures the text takes up the full width it can */
+}
+
+.featured-images button {
+    margin-bottom: 10px; /* Adds a little space below the button */
+    cursor: pointer; /* Changes the cursor to indicate the element is clickable */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .featured-images {
+        flex-direction: column;
+    }
+    .featured-images div {
+        flex-basis: auto; /* Allows boxes to fill the container on smaller screens */
+    }
+}
+/* Reset some basic elements */
+body, h1, h2, h3, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
+}
+
+header h1 {
+    margin: 0;
+    padding-left: 20px;
 }
 
 nav {
-    background-color: #555;
-    padding: 0.5em;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 0.5em 1em;
-    margin: 0 0.2em;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background: #575757;
 }
 
 section {
-    padding: 1em;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-/* Apply a background image to the whole page */
-#travel-home {
-    background: url('path/to/your/travel-background.jpg') no-repeat center center fixed;
-    background-size: cover;
-}
-
-/* Style the images section */
-.featured-images {
-    display: flex;
-    justify-content: space-around;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
     margin: 20px 0;
 }
 
-.featured-images img {
-    width: 30%; /* Adjust based on preference */
-    height: auto;
-    border-radius: 10px; /* Optional: for rounded corners */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for depth */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group button {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background: #575757;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+.team-member {
+    margin: 20px 0;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.team-member h3,
+.team-member p {
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Travel Website</title>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="script.js" defer></script>
+</head>
+<body id="travel-home">
+    <header>
+        <h1>Explore Canada</h1>
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="contact.html">Contact</a>
+            <!-- Search Form -->
+            <form id="searchForm">
+                <input type="text" id="searchInput" placeholder="Ask me anything, powered by ChatGPT">
+                <button type="submit">Search</button>
+            </form>
+            
+        </nav>
+    </header>
+   
+    <section id="map-section">
+        <h2>Welcome to our Travel Website!</h2>
+        <p>Discover your next adventure with us...</p>
+        <!-- Featured Images -->
+        <div class="featured-images">
+            <div>
+                <img src="images (1) - Copy.jpg" alt="Banff National Park, Canadian Rockies">
+                <span>Nestled in the heart of the Canadian Rockies, Banff National Park is a paradise for nature lovers and outdoor enthusiasts.</span>
+                <button class="map-region1" id="rockies">Rockies</button>
+            </div>
+            <div>
+                <img src="images (2) - Copy.jpg" alt="Vancouver Skyline">
+                <span>This vibrant city on the Pacific coast is known for its stunning natural beauty, nestled between mountains and ocean.</span>
+                <button class="map-region2" id="vancouver">Vancouver</button>
+            </div>
+            <div>
+                <img src="images (3).jpg" alt="Quebec City Historic District">
+                <span>As one of North America's oldest cities, Quebec City boasts a rich history, evident in its well-preserved old town, a UNESCO World Heritage Site.</span>
+                <button class="map-region3" id="quebec-city">Quebec City</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        &copy; 2024 Explore the World Travel Co.
+      
+ 
+ <div class="social-links">
+            <a href="https://www.facebook.com/yourusername" target="_blank">Facebook</a> |
+            <a href="https://www.youtube.com/watch?v=8cfhNWwlO54" target="_blank">YouTube</a> |
+            <a href="https://github.com/fahimaAzizi" target="_blank">GitHub</a> |
+            <a href="https://myaccount.google.c">Gmail</a>
+        </div></footer>
+    
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchForm = document.getElementById('searchForm');
+        const searchInput = document.getElementById('searchInput');
+    
+        searchForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent the form from submitting normally
+            alert(`Searching for: ${searchInput.value}`); // Placeholder action
+            // Here, you could add functionality to perform a search
+        });
+    });
+    </script>
+    
+</html>
