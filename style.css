@@ -193,3 +193,28 @@ footer {
         flex-direction: column;
     }
 }
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Adjust the space between team members */
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px; /* Adjust the width as necessary */
+    height: auto;
+    border-radius: 50%; /* Makes the image round, remove if not needed */
+    margin-bottom: 10px; /* Adjusts space between the image and the name */
+}
+
+.team-member h3 {
+    margin-top: 0; /* Removes the default top margin from the h3 */
+    margin-bottom: 5px; /* Adjusts space below the name, if needed */
+}
