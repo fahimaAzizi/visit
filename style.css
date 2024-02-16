@@ -218,3 +218,10 @@ footer {
     margin-top: 0; /* Removes the default top margin from the h3 */
     margin-bottom: 5px; /* Adjusts space below the name, if needed */
 }
+
+.team-member img {
+    border-radius: 50%; /* This makes the image round */
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    object-fit: cover; /* This ensures the images cover the area without distorting the aspect ratio */
+}
