@@ -159,4 +159,17 @@ function initMap() {
     });
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const searchForm = document.getElementById('searchForm');
+    const searchInput = document.getElementById('searchInput');
+
+    searchForm.addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent the form from submitting normally
+        const query = searchInput.value;
+        window.location.href = `https://chat.openai.com/g/g-6QnV7K2Em-canada=${encodeURIComponent(query)}`; // Redirect user to the search URL
+    });
+});
+
+
+
 
