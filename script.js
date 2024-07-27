@@ -169,7 +169,3 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = `https://chat.openai.com/g/g-6QnV7K2Em-canada=${encodeURIComponent(query)}`; // Redirect user to the search URL
     });
 });
-
-
-
-
